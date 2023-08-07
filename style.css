@@ -369,7 +369,7 @@ main {
 
 }
 
-@media (max-width: 430px) {
+@media (max-width: 428px) {
 
   nav a {
     font-size: 18px;
@@ -388,7 +388,7 @@ main {
   }
 
   #home h1 {
-    font-size: 70px;
+    font-size: 55px;
     margin-bottom: 250px;
   }
 
