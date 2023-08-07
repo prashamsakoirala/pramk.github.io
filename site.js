@@ -19,27 +19,24 @@ document.addEventListener("DOMContentLoaded", function() {
   
 
 
-function myFunction() {
-  if (document.documentElement.scrollTop > 750) {
-    document.getElementById("top").style.backgroundColor = "#FCF7E5";
-    updateNavLinksColor(true);
-
-  } else {
-    document.getElementById("top").style.backgroundColor = "#9FB8AD";
-    updateNavLinksColor(false);
+  function myFunction() {
+    if (document.documentElement.scrollTop > 750) {
+      document.getElementById("top").style.backgroundColor = "#FCF7E5";
+      updateNavLinksColor(true);
+    } else {
+      document.getElementById("top").style.backgroundColor = "#9FB8AD";
+      updateNavLinksColor(false);
+  
+      if (document.documentElement.scrollTop > 100) {
+        document.getElementById("aboutme").style.backgroundColor = "black";
+        document.getElementById("mywork").style.backgroundColor = "black";
+      } else {
+        document.getElementById("aboutme").style.backgroundColor = "#9FB8AD";
+        document.getElementById("mywork").style.backgroundColor = "#9FB8AD";
+      }
+    }
   }
-}
-
-function myFunction() {
-  if (document.documentElement.scrollTop > 100) {
-    document.getElementById("aboutme").style.backgroundColor = "black";
-    document.getElementById("mywork").style.backgroundColor = "black";
-
-  } else {
-    document.getElementById("aboutme").style.backgroundColor = "#9FB8AD";
-    document.getElementById("mywork").style.backgroundColor = "#9FB8AD";
-  }
-}
+  
 
 
 
