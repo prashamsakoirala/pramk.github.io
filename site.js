@@ -22,14 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
 function myFunction() {
   if (document.documentElement.scrollTop > 750) {
     document.getElementById("top").style.backgroundColor = "#FCF7E5";
-    document.getElementById("aboutme").style.backgroundColor = "black";
-    document.getElementById("mywork").style.backgroundColor = "black";
     updateNavLinksColor(true);
 
   } else {
     document.getElementById("top").style.backgroundColor = "#9FB8AD";
-    document.getElementById("aboutme").style.backgroundColor = "#9FB8AD";
-    document.getElementById("mywork").style.backgroundColor = "#9FB8AD";
     updateNavLinksColor(false);
   }
 }
