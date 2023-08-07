@@ -372,6 +372,9 @@ main {
 }
 
 @media (max-width: 430px) {
+  #home {
+    height: 760px;
+  }
 
   nav a {
     font-size: 18px;
@@ -386,7 +389,7 @@ main {
 
   #home p {
     font-size: 30px;
-    margin-top: 210px;
+    margin-top: 180px;
   }
 
   #home h1 {
@@ -398,7 +401,15 @@ main {
     height: 736px;
   }
 
-@media (max-width: 428px) {
+  header nav a[href="#mywork"] {
+    display: none;
+  }
+
+  #mywork {
+    display: none;
+  }
+
+@media (max-width: 375px) {
 
   header nav a[href="#mywork"] {
     display: none;
@@ -407,7 +418,14 @@ main {
   #mywork {
     display: none;
   }
+
+  #home p {
+    font-size: 30px;
+    margin-top: 80px;
+  }
 }
+
+
 
 .hiddentext {
   margin: 0 9%;
@@ -417,5 +435,4 @@ main {
 }
 
   }
-
 
