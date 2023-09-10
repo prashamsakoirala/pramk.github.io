@@ -145,7 +145,7 @@ main {
 }
 
 #mywork {
-  height: 1200px;
+  height: 1600px;
   padding-top: 60px;
   z-index: 0;
   color: #FCF7E5;
@@ -215,6 +215,16 @@ main {
   margin-left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.fa-award {
+  color: brown;
+  margin-top: 5%;
+}
+
+#gbtext {
+  padding-top: 10px;
+  font-size: 18px;
 }
 
 .card-header img {
@@ -433,4 +443,3 @@ main {
 }
 
   }
-
