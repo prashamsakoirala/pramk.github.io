@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
 
+@keyframes glowing { 
+  0% { 
+      opacity: .2; 
+  } 
+
+  50% { 
+      opacity: 1; 
+  } 
+
+  100% { 
+      opacity: .2; 
+  } 
+} 
+
 html {
   scroll-behavior: smooth;
 }
@@ -75,9 +89,9 @@ main {
   padding-top: -20px;
 }
 
-#home p {
+#home p{
   font-size: 40px;
-  margin-top: 270px;
+  margin-top: 230px;
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -92,8 +106,18 @@ main {
   animation-fill-mode: forwards;
 }
 
+#home .arrow{
+  margin-top: -20%;
+  font-size: 50px;
+  animation: glowing 3s ease-in-out infinite;
+}
+
+#home .arrow p {
+  font-size: 20px;
+}
+
 #aboutme {
-  height: 450px;
+  height: 800px;
   padding-top: 40px;
   z-index: 0;
   color: #FCF7E5;
@@ -120,8 +144,16 @@ main {
   transition: 0.3s;
 }
 
+#aboutme h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
 .icons {
-  margin-top: -20%;
+  margin-top: -65%;
+  margin-bottom: 35%;
   animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -145,12 +177,19 @@ main {
 }
 
 #mywork {
-  height: 1600px;
+  height: 1500px;
   padding-top: 60px;
   z-index: 0;
   color: #FCF7E5;
   background: black;
   transition: .8s;
+}
+
+#mywork h1{
+  text-align: center;
+  font-size: 60px;
+  margin-top: -15%;
+  margin-bottom: 4%;
 }
 
 #mywork h2 {
