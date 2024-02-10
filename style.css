@@ -2,7 +2,7 @@
 
 @keyframes glowing { 
   0% { 
-      opacity: .2; 
+      opacity: 0; 
   } 
 
   50% { 
@@ -10,7 +10,7 @@
   } 
 
   100% { 
-      opacity: .2; 
+      opacity: 0; 
   } 
 } 
 
@@ -117,7 +117,7 @@ main {
 }
 
 #aboutme {
-  height: 800px;
+  height: 500px;
   padding-top: 40px;
   z-index: 0;
   color: #FCF7E5;
@@ -177,7 +177,7 @@ main {
 }
 
 #mywork {
-  height: 1500px;
+  height: 1800px;
   padding-top: 60px;
   z-index: 0;
   color: #FCF7E5;
@@ -188,13 +188,22 @@ main {
 #mywork h1{
   text-align: center;
   font-size: 60px;
-  margin-top: -15%;
+  margin-top: 5%;
   margin-bottom: 4%;
 }
 
 #mywork h2 {
   text-align: center;
   font-size: 40px;
+}
+
+#mywork p{
+  text-align: center;
+  margin-top: -3%;
+  font-size: 20px;
+  animation: glowing 5s ease-in-out infinite;
+  animation-fill-mode: forwards;
+
 }
 
 .cards {
